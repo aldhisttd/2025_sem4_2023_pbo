@@ -1,6 +1,8 @@
 <?php 
 
-$user = $_GET['username'];
-$pass = $_GET['password'];
 
-echo "Username nya ".$user." dan passwordnya ".$pass;
+if(isset($_GET['username'])){
+    // 
+}
+
+
