@@ -1,0 +1,5 @@
+- form_login.php 
+- proses_login.php
+- buat sesi, $_SESSION['login'] = 1;
+- beranda.php 
+- logout.php (session destroy);
