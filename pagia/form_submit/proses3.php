@@ -7,13 +7,3 @@ $uniqueFileName = md5(date('Y-m-d-h-i-s')).$ext;
 
 // upload file
 move_uploaded_file($_FILES["photo"]["tmp_name"], "gambar/".$uniqueFileName);
-
-
-
-
-// echo md5("2025-03-05-12-00-11").".jpeg";
-// ambil/tentukan nama file/gambar, jpg
-// 2025-03-05-12-00-12.jpg
-// md()
-
-// simpan file nya di project sama
