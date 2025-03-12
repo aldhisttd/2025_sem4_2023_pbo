@@ -9,7 +9,7 @@ session_start();
 
         <?php 
             if(isset($_SESSION['error_username'])){
-                echo '<span style="color: red;">Username tidak boleh kosong</span>';
+                echo '<span style="color: red;">'.$_SESSION['error_username'].'</span>';
             }
         ?>
 
@@ -20,7 +20,7 @@ session_start();
         <input type="text" name="password"><br>
         <?php 
             if(isset($_SESSION['error_password'])){
-                echo '<span style="color: red;">Password tidak boleh kosong</span>';
+                echo '<span style="color: red;">'.$_SESSION['error_password'].'</span>';
             }
         ?>
     </div>
