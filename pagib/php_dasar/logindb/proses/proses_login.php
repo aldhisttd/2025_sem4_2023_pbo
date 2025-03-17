@@ -19,13 +19,6 @@ if($userForm=='' || $passForm==''){
     exit();
 }
 
-// cek data login
-// if($userForm!=$userTrue || $passForm!=$passTrue){
-//     $_SESSION['err']['login_fail'] = "Data login tidak valid.";
-//     header('location:../form_login.php');
-//     exit();
-// }
-
 // koneksi
 $koneksi = mysqli_connect('localhost', 'root', '', 'pbo_pagib');
 $sql = "SELECT * FROM `user` WHERE username='$userForm' AND password='$passForm'";
