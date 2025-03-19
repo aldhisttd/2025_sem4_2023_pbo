@@ -21,8 +21,8 @@ if (isset($_SESSION['login'])) {
 
 
     <div class="container-fluid">
-        <div class="row justify-content-center align-items-center" style="height: 100vh;">
-            <div class="col-4 bg-white py-3 px-3 rounded">
+        <div class="row justify-content-center align-items-center bg-danger" style="height: 100vh;">
+            <div class="col-11 col-sm-6 col-md-3 bg-white py-3 px-3 rounded">
 
                 <div class="text-center">
                     <img src="https://sttdumai.ac.id/assets/image/material/icon/logo.png" width="80" class="img-fluid" alt="...">
@@ -38,8 +38,6 @@ if (isset($_SESSION['login'])) {
                 <?php
                 }
                 ?>
-                
-
 
                 <form action="proses/proses_form.php" method="POST">
                     <div class="mb-3">
