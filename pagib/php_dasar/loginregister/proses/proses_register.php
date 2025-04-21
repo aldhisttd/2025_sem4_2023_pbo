@@ -50,7 +50,7 @@ $q = mysqli_query($koneksi, $sql);
 $row = mysqli_num_rows($q);
 
 if($row==1){
-    $_SESSION['err']['user_exist'] = "Username has been taken.";
+    $_SESSION['err']['username'] = "Username has been taken.";
     header('location:../register.php');
     exit();
 }
