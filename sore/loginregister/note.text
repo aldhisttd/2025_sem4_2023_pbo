@@ -1,0 +1,14 @@
+<?php 
+
+// PHP Dasar
+// Variabel
+$nama_variable = "value";
+// ?nama_variable=value
+// $_REQUEST['nama_variable'];
+// session_start();
+// $_SESSION['nama_variable'] = "value";
+// form submit
+    // form file upload
+    // form checkbox
+    // form radio button
+    // form input text
