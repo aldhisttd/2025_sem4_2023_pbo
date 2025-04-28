@@ -6,3 +6,5 @@ if( isset($_SESSION['login']) ){
 }
 ?>
 form login
+
+<a href="form_register.php">Register</a>
