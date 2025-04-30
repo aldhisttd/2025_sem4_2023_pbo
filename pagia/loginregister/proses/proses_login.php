@@ -10,6 +10,7 @@ $passForm = $_POST['password'];
 session_start();
 
 // cek kosong
+
 if($userForm==''){
     $_SESSION['err']['username'] = "Username tidak boleh kosong.";
 }

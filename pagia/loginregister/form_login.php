@@ -50,7 +50,7 @@ if (isset($_SESSION['isLogin'])) {
 
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Username</label>
+                        <label for="exampleFormControlInput1" class="form-label">Password</label>
                         <input type="password" name="password" class="form-control <?= (isset($_SESSION['err']['password']))?'is-invalid':null ?>" id="exampleFormControlInput1" placeholder="Input password anda">
                         <div class="invalid-feedback">
                             <?= $_SESSION['err']['password'] ?>
