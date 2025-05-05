@@ -1,5 +1,9 @@
 <?php 
 session_start();
+if( isset($_SESSION['login']) ){
+    header('location:index.php');
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -83,7 +87,8 @@ session_start();
             <button type="submit">Register Now</button>
         </div>
     </form>
-
+    <br>
+    <a href="form_login.php">Login</a>
 </body>
 
 </html>

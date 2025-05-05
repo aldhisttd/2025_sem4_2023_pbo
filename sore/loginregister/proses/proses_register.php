@@ -49,6 +49,7 @@ if($jlh_row > 0){
 
 // tambahkan ke database
 $password = password_hash($password, PASSWORD_DEFAULT);
+// $password = md5($password);
 $sql = "INSERT INTO members (nickname, username, password, role) VALUES('$nickname','$username','$password','$role')";
 mysqli_query($koneksi, $sql); 
 $_SESSION['success'] = "Proses register berhasil, anda sudah bisa login";
