@@ -1,27 +1,8 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <?php include "komponen/head.php" ?>
-    </head>
-    <body data-sidebar="dark">
-        <div id="layout-wrapper">
-            <?php include "komponen/header.php" ?>
-            <?php include "komponen/sidebar.php" ?>
-            <div class="main-content">
+<?php
+// kalau tidak login
+    //ke form login
 
-                <div class="page-content">
-                    <div class="container-fluid">
-                        <?php 
-                            include "konten/".$_REQUEST['page'].".php";
-                        ?>
-                    </div>
-                </div>
-                <?php include "komponen/footer.php" ?>
-            </div>
-        </div>
-        <?php include "komponen/right-sidebar.php" ?>
-        <div class="rightbar-overlay"></div>
-        <?php include "komponen/script.php" ?>
-
-    </body>
-</html>
+// kalau sudah login
+    //ke dashboard
+header('location:app.php?page=dashboard');
+?>
